@@ -28,8 +28,9 @@ cd Agentic_AI
   ```
 - Run scripts:  
   ```
-  python llm_call.py
-  python pdf_reader.py
+  python step1.py
+  python step2.py
+  python app.py
   ```
 
 3. **Level 2**  
@@ -42,8 +43,8 @@ cd Agentic_AI
 - Install dependencies and set API key:  
   ```
   pip install -r requirements.txt
-  GOOGLE_API_KEY=your_gemini_api_key_here
-  OPENWEATHER_API_KEY=your_openweather_api_key_here
+  export GOOGLE_API_KEY=your_gemini_api_key_here
+  export OPENWEATHER_API_KEY=your_openweather_api_key_here
   ```
 - Start MCP server (Terminal 1):  
   ```
