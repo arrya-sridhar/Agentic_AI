@@ -6,8 +6,9 @@ This repository contains:
 - **Level 1**: Basic LLM calls, PDF analysis and an user interface that combines both the functions
 - **Level 2**: FastMCP weather tool server and client with Google Gemini
 
-It uses Google Gemini , model = gemini-2.5-flash
-It uses OpenWeather API for weather retrieval 
+It uses:
+- Google Gemini , model = gemini-2.5-flash
+- OpenWeather API for weather retrieval 
 
 ## Setup & Run
 
