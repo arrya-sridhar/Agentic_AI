@@ -1,12 +1,13 @@
 from fastmcp import FastMCP
 import requests
+import os 
 
 mcp = FastMCP("Weather MCP Server")   # creates a new FastMCP server instance
 
 @mcp.tool()   # decorator to register this function as an MCP tool under server instance mcp
 def get_weather(city: str) -> str:  
 
-    api_key = "2c659ee2cb08342d8639dc6d581c68ca"  
+    api_key = os.getenv("OPENWEATHER_API_KEY")  
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     
     try:
