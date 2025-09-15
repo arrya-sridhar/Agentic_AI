@@ -11,7 +11,7 @@ This repository contains:
 1. **Clone the repository**  
 ```
 git clone https://github.com/arrya-sridhar/Agentic_AI.git
-cd Agentic_AI
+cd Agentic_AI/LYNQtasks
 ```
 
 2. **Level 1**  
