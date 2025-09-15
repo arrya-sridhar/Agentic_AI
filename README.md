@@ -1,2 +1,2 @@
 # Agentic_AI
-Basic steps towards agent ai 
+Basic steps towards building agentic ai 
