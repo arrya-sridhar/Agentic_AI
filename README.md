@@ -9,10 +9,10 @@ This repository contains:
 ## Setup & Run
 
 1. **Clone the repository**  
-
+```
 git clone https://github.com/arrya-sridhar/Agentic_AI.git
 cd Agentic_AI
-
+```
 
 2. **Level 1**  
 - Create and activate a virtual environment:  
@@ -23,7 +23,7 @@ cd Agentic_AI
   ```
 - Install dependencies and set API key:  
   ```
-  pip install google-generativeai pypdf
+  pip install -r requirements.txt
   export GOOGLE_API_KEY=your_gemini_api_key_here
   ```
 - Run scripts:  
@@ -39,28 +39,21 @@ cd Agentic_AI
   python3 -m venv venv
   source venv/bin/activate
   ```
-- Install dependencies:  
+- Install dependencies and set API key:  
   ```
   pip install -r requirements.txt
-  ```
-- Create `.env` with your API keys:  
-  ```
-  cp .env.example .env
-  # then edit .env:
-  # GOOGLE_API_KEY=your_gemini_api_key_here
-  # OPENWEATHER_API_KEY=your_openweather_api_key_here
+  GOOGLE_API_KEY=your_gemini_api_key_here
+  OPENWEATHER_API_KEY=your_openweather_api_key_here
   ```
 - Start MCP server (Terminal 1):  
   ```
-  source venv/bin/activate
   python weather_mcp.py
   ```
 - Run client agent (Terminal 2):  
   ```
-  source venv/bin/activate
   python client_agent.py
   ```
 
 ---
 
-**Note:** Do **not** commit your `.env` file. Each user must supply their own API keys.
+**Note:** Exporting API keys are temporary and needs to be done for every new shell.
